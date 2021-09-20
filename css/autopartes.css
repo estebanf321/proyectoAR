@@ -25,7 +25,7 @@ header h1{
     font-family: 'Bodoni Moda', serif;
     display: inline-block;
     position: relative;
-    bottom: 30px;
+    bottom: 25px;
 }
 
 /* desaparece la barra menu*/
@@ -429,7 +429,7 @@ margin: 0 0 0 1em;
 .portadaimg img{
     max-width: 100%; 
    }
-   
+
 /* fin productos*/
 
  /* inicio contacto*/   
