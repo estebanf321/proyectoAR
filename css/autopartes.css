@@ -244,7 +244,7 @@ margin: 0 0 0 1em;
 
 .portadaimg img{
  /* max-width: 100%; */
- width: 960px;
+ width: 850px;
  height: 200px;
 }
 
@@ -423,6 +423,14 @@ margin: 0 0 0 1em;
     width: 100%;
     }
 /* fin home*/
+
+/* inicio productos*/
+
+.portadaimg img{
+    max-width: 100%; 
+   }
+   
+/* fin productos*/
 
  /* inicio contacto*/   
     .columna{
