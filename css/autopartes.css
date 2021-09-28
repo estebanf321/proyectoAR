@@ -70,8 +70,9 @@ nav ul li a:hover{
     background-color:rgb(73, 73, 250) ;
 }
 
+
 footer{
-    background-color: #ccc;
+    background-color: #ccc; 
     clear: both;
     color: #333;
     padding: 3em 0;

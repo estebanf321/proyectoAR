@@ -19,6 +19,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--estilo del sitio-->
     <link rel="stylesheet" href="css/autopartes.css">
+
+
 </head>
 
 <body>
@@ -51,23 +53,23 @@
 
         <div class="columna left">
             <h2>Contacto</h2>
-            <form action="" method="" class="formulario">
+            <form action="procesaEmai.php" method="post" class="formulario">
                 <p>
                     <label for="">Nombre</label>
-                    <input type="text">
+                    <input type="text" name="name" size="30" maxlength="40" />
                 </p>
                 <p>
                     <label for="">Email</label>
-                    <input type="email">
+                    <input type="email" name="email" size="30" maxlength="50">
                 </p>
                 <p>
                     <label for="">Teléfono</label>
-                    <input type="text">
+                    <input type="text" name="tel" size="15" maxlength="30">
                 </p>
 
                 <p>
-                    <label for="comentario">Consulta</label>
-                    <textarea name="" id="comentario" cols="30" rows="10"></textarea>
+                    <label for="">Consulta</label>
+                    <textarea name="feedBack" WRAP="physical" cols="30" rows="10"></textarea>
                 </p>
                 <p class="acciones"> <input type="submit" value="Enviar"></p>
             </form>
@@ -95,7 +97,9 @@
         <div class="holder">
             <h5> Todas las marcas y logos están presentes sólo a título informativo y son propiedad de sus respectivos
                 dueños.</h5>
-            <p> Copyright&copy;2021 - Autopartes Rosario </p>
+            <p> Autopartes Rosario&copy;2021 - Todos los derechos reservados.</p>
+            <h5>Av. Eva Perón Nº 7201 - Rosario - Santa Fe - Argentina // WhatsApp: +3413507313 -
+                ventas@desarmaderoar.com.ar</h5>
         </div>
     </footer>
 

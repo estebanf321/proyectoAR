@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--para que se vea en celulares y tables <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
@@ -9,6 +10,13 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <title>Home - Autopartes Rosario</title>
+    <meta name="description"
+        content="AUTOPARTES ROSARIO- Repuestos en general- Autopartes, Accesorios, Nuevos y Usados, Nacionales e Importados. Envìos a todo el país. Rosario, Santa Fe, Argentina-Telfax: (0341)4564762-  WhatsApp:+3413507313- Av.Eva Perón 7201">
+    <meta name="keywords"
+        content="desarmaderos rosario,autopartes,desarmadero,desarmaderos,parte,repuesto,usado,repuestos,partes,alfa,audi,bmw,citroen,chevrolet,chrysler,dacia,daewoo daihatsu, fiat, ford, honda, hyundai, isuzu,kia,lada,land rover,mazda,merces benz,mitsubishi,nissan,datsun,peugeot,renault,rover,seat,subaru,suzuki toyota,volkswagen,dodge, alfa,audi,bmw,citroen,chevrolet,chrysler,dacia,daewoo, santa fe,rosario,argentina,accesorios,sarmaro,optica,parrilla,frente,faros,giro,paragolpe,capot, capó,guardabarro,puerta,tapa,baul,compuerta,compuertas,parabrisas,luneta,lunetas,vidrio,virios,puerta,puertas,motor,motores,caja,velocidad,cilindro,block,cigueñal,arbol,leva,piston,pistones,biela,bielas,bomba,agua,alternadores,compresor,aire acondicionado,alternador,radiador,electro,tren delantero,llanta,llantas,butacas,instrumental,tablero,casco,cascos,chasis,diferencial,diferenciales,corona,piñon,nucleo,levanta cristal,cerrajeria,cerrajerias,tapiceria,tapicerias,aceite,cabina,cabinas,carga,disco,freno,placa,embrague,engranaje,engranajes,palier,palieres,multiple escape,admision,admicion,semieje,semiejes,espejo,espejos,amortiguador,importado,importados.campana,campanas,maza,rueda,,ruedas,sarmaros,eje,ventilete,ventiletes,trasero,4x4,carroceria,chapa,cristales,autos,repuestos autos,repuestos usados,repuestos pick up,">
+    <meta name="author" content="estebanf.it">
+
+
     <!--fuentes del sitio-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +31,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--estilo del sitio-->
     <link rel="stylesheet" href="css/autopartes.css">
+
 
 </head>
 
@@ -55,7 +64,9 @@
     </nav>
 
     <main class="holder">
-       
+
+
+
         <div class="columnas">
             <div class="bienvenidos left">
                 <h2>Bienvenidos</h2>
@@ -70,11 +81,13 @@
                 <h2>Redes Sociales</h2>
                 <div class="testimonio">
                     <span class="cita"><i class="fab fa-facebook-square"></i> Facebook:</span>
-                    <span class="autor"><a target="_blanck" href="https://www.facebook.com/autoparterosario"> autoparterosario</a></span>
-                    
+                    <span class="autor"><a target="_blanck" href="https://www.facebook.com/autoparterosario">
+                            autoparterosario</a></span>
+
                     <span class="cita"><i class="fab fa-instagram"></i> Instagram:</span>
-                    <span class="autor"><a target="_blanck" href="https://www.instagram.com/autopartesrosario/?hl=es"> @autopartesrosario </a></span>
-                    
+                    <span class="autor"><a target="_blanck" href="https://www.instagram.com/autopartesrosario/?hl=es">
+                            @autopartesrosario </a></span>
+
                 </div>
 
             </div>
@@ -87,14 +100,46 @@
     </main>
 
     <footer>
-        <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=5493413507313&text=Consulta_Wsp">
+        <a class="appWhatsapp" target="_blanck"
+            href="https://api.whatsapp.com/send?phone=5493413507313&text=Consulta_Wsp">
             <img src="img/wpp.png" alt="Whatsapp">
         </a>
+
+        <!-- Messenger plugin de chat Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your plugin de chat code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "518859801904577");
+            chatbox.setAttribute("attribution", "biz_inbox");
+
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v12.0'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
 
         <div class="holder">
             <h5> Todas las marcas y logos están presentes sólo a título informativo y son propiedad de sus respectivos
                 dueños.</h5>
-            <p> Copyright&copy;2021 - Autopartes Rosario </p>
+            <p> Autopartes Rosario&copy;2021 - Todos los derechos reservados.</p>
+            <h5>Av. Eva Perón Nº 7201 - Rosario - Santa Fe - Argentina // WhatsApp: +3413507313 -
+                ventas@desarmaderoar.com.ar</h5>
         </div>
     </footer>
 
