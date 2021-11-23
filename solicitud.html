@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud - Autopartes Rosario</title>
+    <!--fuentes del sitio-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@900&display=swap" rel="stylesheet">
+    <!--empatar estilos basicos en diferentes navegadores-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- carga de iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--estilo del sitio-->
+    <link rel="stylesheet" href="css/autopartes.css">
+</head>
+
+<body>
+    <header>
+        <div class="holder">
+            <img src="img/logo.png" width="150" alt="Autopartes Rosario">
+            <h1>AUTOPARTES ROSARIO</h1>
+        </div>
+
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><i class="fas fa-bars"></i>Menu</a>
+        </div>
+
+    </header>
+
+    <nav class="navS">
+        <div class="holder">
+            <ul>
+                <li> <a href="index.html"><i class="fas fa-laptop-house"></i>Home</a></li>
+                <li> <a href="empresa.html"><i class="fas fa-building"></i>Empresa</a></li>
+                <li> <a href="servicios.html"><i class="fab fa-usps"></i>Servicios</a></li>
+                <li> <a href="productos.html"><i class="fas fa-car"></i>Productos</a></li>
+                <li> <a href="novedades.html"><i class="fas fa-newspaper"></i>Novedades</a></li>
+                <li> <a href="contacto.html"><i class="fas fa-mail-bulk"></i>Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="holder">
+        <h2 align="center">Solicitud de Nuevo Cliente:</h2>
+        
+        <form action="procesaEmai2.php" method="post" class="formulario">
+            <table width="494" align="center" cellpadding="2" cellspacing="0">
+                <tr>
+                    <td width="75">Cliente:</td>
+                    <td width="409"><input name="name" size="30" maxlength="40" type="text" required>
+                        * </td>
+                </tr>
+                <tr>
+                    <td>Cuit:</td>
+                    <td><input name="cuit" size="15" maxlength="15" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input name="email" size="30" maxlength="50" type="email" required>
+                        *</td>
+                </tr>
+                <tr>
+                    <td>Teléfono:</td>
+                    <td><input name="tel" size="15" maxlength="40" type="text"required>
+                        *</td>
+                </tr>
+                <tr>
+                    <td>Dirección:</td>
+                    <td><input name="direccion" size="30" maxlength="50" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Localidad:</td>
+                    <td><input name="localidad" size="30" maxlength="30" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Provincia:</td>
+                    <td><input name="provincia" size="30" maxlength="30" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Rubro:</td>
+                    <td><input name="rubro" size="30" maxlength="50" type="text" required>
+                        *</td>
+                </tr>
+                <tr>
+                    <td>Especialidad:</td>
+                    <td><input name="esp" size="30" maxlength="50" type="text" required>
+                        *</td>
+                </tr>
+                <tr>
+                    <td>Cat&aacute;logos:</td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input name="catalogos" type="checkbox" value="si"></td>
+                    <td>(Seleccione si necesita los cat&aacute;logos actualizados)</td>
+                </tr>
+                <tr>
+                    <td>Ofertas:</td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input name="ofertas" type="checkbox" value="si"></td>
+                    <td>(Seleccione la casilla si necesita las ofertas actuales)</td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>
+                        <p class="acciones"> <input type="submit" value="Enviar"></p>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <p align="center">* campos obligatorios </p>
+
+
+    </main>
+
+    <footer>
+        <a class="appWhatsapp" target="_blanck"
+            href="https://api.whatsapp.com/send?phone=5493413507313&text=Consulta_Wsp">
+            <img src="img/wpp.png" alt="Whatsapp">
+        </a>
+
+        <div class="holder">
+            <h5> Todas las marcas y logos están presentes s&oacutelo a título informativo y son propiedad de sus
+                respectivos
+                dueños.</h5>
+            <p> Autopartes Rosario&copy;2021 - Todos los derechos reservados.</p>
+            <h5>Av. Eva Per&oacuten Nº 7201 - Rosario - Santa Fe - Argentina // WhatsApp: +3413507313 -
+                ventas@desarmaderoar.com.ar</h5>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>

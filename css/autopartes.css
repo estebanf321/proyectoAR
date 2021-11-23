@@ -121,6 +121,19 @@ h2{
     /* width:100%; */
     height: auto;
 }
+/*agregado de nuevo cliente*/
+.appAcliente{
+    position: fixed;
+    right: 26px;
+    bottom:200px;
+    width: 60px;
+    z-index: 1000;
+}
+
+.appAcliente{
+    /* width:100%; */
+    height: auto;
+} 
 
  /* inicio home*/
 .homeimg{
@@ -302,9 +315,66 @@ margin: 0 0 0 1em;
 
 /* inicio novedad*/
 
-/* 
-novedaddes en CONTRUCCION
-*/
+
+
+.demo .novedad  {
+    list-style-type: none;
+    float: left;
+}
+
+.novedad {
+    width: 240px;
+    padding:2em 1em 1em 1em;               
+    text-align: center;    
+    transition: all 3s ease;      
+}
+
+.novedad img {
+    margin:auto;
+    display:block;  
+    transform: scale(0.9);
+    transition: all 2s ease; 
+}
+
+
+.novedad:hover {
+    background-color: rgba(134, 134, 134, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+.novedad:hover img {
+transform: scale(1);     
+}  
+
+.novedad:hover h2 {
+    color:#3336c9;
+    font-weight: bold;   
+}
+
+.novedad:hover p {
+    font-weight: bold;   
+}
+
+.listanovedades {
+    /*background-color: brown;*/
+    width: 100%;
+   
+    /* text-align: center;*/
+    column-count: 2;
+    
+    
+}
+
+.listanovedades ul{
+    
+    list-style: none;
+    
+}
+
+.listanovedades i{
+	margin-right:10px;
+}
 
 /* fin novedad*/
 
@@ -359,13 +429,17 @@ novedaddes en CONTRUCCION
     cursor: pointer;
 }
 
+.formulario input:invalid{
+    background-image: linear-gradient(to right, pink, rgb(177, 144, 238));
+  }
+
 .formulario textarea{
     height: 10em;
     resize: none;
 }
 
 .formulario .acciones{
-    text-align: center;
+    text-align:center;
 }
 
 /* fin contacto*/
@@ -484,6 +558,13 @@ novedaddes en CONTRUCCION
    }  
 
 /* fin productos*/
+
+.listanovedades {
+    
+    width: 100%;
+    column-count: 1;   
+    
+}
 
  /* inicio contacto*/   
     .columna{

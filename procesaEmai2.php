@@ -1,22 +1,45 @@
 <?php
 
 $name=$_POST['name'];
+$cuit=$_POST['cuit'];
 $email=$_POST['email'];
 $tel=$_POST['tel'];
-$feedBack=$_POST['feedBack'];
+$direccion=$_POST['direccion'];
+$localidad=$_POST['localidad'];
+$provincia=$_POST['provincia'];
+$rubro=$_POST['rubro'];
+$esp=$_POST['esp'];
+$catalogos=$_POST['catalogos'];
+$ofertas=$_POST['ofertas'];
+
 
 ValidarDatos($name);
+ValidarDatos($cuit);
 ValidarDatos($email);
 ValidarDatos($tel);
-ValidarDatos($feedBack);
+ValidarDatos($direccion);
+ValidarDatos($localidad);
+ValidarDatos($provincia);
+ValidarDatos($rubro);
+ValidarDatos($esp);
+ValidarDatos($catalogos);
+ValidarDatos($ofertas);
 
 
 $toAdreess='ventas@desarmaderoar.com.ar';
-$subject='Consultas desde la web';
-$mailContent='- Nombre : '.$name."<br/>"
+$subject='Solicitud de Catálogos';
+$mailContent='- Cliente : '.$name."<br/>"
+            .'- Cuit : '.$cuit."<br/>"
 			.'- E-mail : '.$email."<br/>"
 			.'- Telefono : '.$tel."<br/>"
-			.'- Consulta : '.$feedBack."<br/>";
+			.'- Direccion : '.$direccion."<br/>"
+			.'- Localidad : '.$localidad."<br/>"
+			.'- Provincia : '.$provincia."<br/>"
+			.'- Rubro : '.$rubro."<br/>"
+			.'- Especialidad : '.$esp."<br/>"
+			.'- Necesita Catálogos : '.$catalogos."<br/>"
+			.'- Necesita Ofertas : '.$ofertas."<br/>";
+			
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
 $headers .= "From: $email";
@@ -44,7 +67,7 @@ mail($toAdreess, $subject, $mailContent, $headers);
 
     //Comprobamos que entre los datos no se encuentre alguna de
     //las cadenas del array. Si se encuentra alguna cadena se
-    //dirige a una p�gina de Forbidden
+    //dirige a una página de Forbidden
     foreach($badHeads as $valor){
       if(strpos(strtolower($campo), strtolower($valor)) !== false){
         header("HTTP/1.0 403 Forbidden");
@@ -60,7 +83,7 @@ mail($toAdreess, $subject, $mailContent, $headers);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta Enviada - Autopartes Rosario</title>
+    <title>Solicitud Enviada - Autopartes Rosario</title>
    <!--fuentes del sitio-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,10 +126,10 @@ mail($toAdreess, $subject, $mailContent, $headers);
     </nav>
 
     <main class="holder">
-        <h2>CONSULTA ENVIADA</h2>
-        <p>¡MUCHAS GRACIAS POR HABER REALIZADO SU CONSULTA!...</p>
+        <h2>SOLICITUD ENVIADA</h2>
+        <p>¡MUCHAS GRACIAS POR HABER COMPLETADO EL FORMULARIO!...</p>
         <p > a la brevedad estaremos poniendonos en contacto con usted
-              para dar una respuesta a la misma</p>
+              para dar una respuesta a su solicitud</p>
 
 
         <div class="homeimg">
